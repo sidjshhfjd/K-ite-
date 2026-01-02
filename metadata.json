@@ -1,0 +1,8 @@
+{
+  "name": "k-ite Chat",
+  "description": "A clean, airy, and modern AI chat interface named k-ite.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

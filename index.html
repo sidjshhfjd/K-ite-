@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>k-ite AI Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- KaTeX CSS for Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      
+      /* Math and Special Character adjustments */
+      .prose strong {
+        color: inherit;
+        font-weight: 700;
+      }
+      /* Layout & Typography adjustments for "Word-like" feel */
+      .prose h1, .prose h2, .prose h3 {
+        color: #1e293b; 
+        font-weight: 700;
+        margin-top: 1.2em;
+        margin-bottom: 0.5em;
+        letter-spacing: -0.02em;
+      }
+      .prose h1 { font-size: 1.8em; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.3em; }
+      .prose h2 { font-size: 1.5em; }
+      .prose h3 { font-size: 1.25em; }
+      
+      /* Make tables look professional within the transparent chat */
+      .prose table {
+        font-size: 0.95em;
+      }
+      
+      /* Code block styling */
+      .prose pre {
+        background-color: #1e293b;
+        border-radius: 0.75rem;
+        color: #e2e8f0;
+      }
+
+      /* KaTeX font adjustments */
+      .katex { font-size: 1.1em; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-markdown": "https://esm.sh/react-markdown@^9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@^4.0.0",
+    "remark-math": "https://esm.sh/remark-math@^6.0.0",
+    "rehype-katex": "https://esm.sh/rehype-katex@^7.0.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-800 antialiased overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
